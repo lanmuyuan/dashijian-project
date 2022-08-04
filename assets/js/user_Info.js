@@ -35,7 +35,7 @@ $(function () {
         const { message, status } = res;
         layer.msg(message);
         if (status == 0) {
-          wind ow.parent.getInfo();
+          window.parent.getInfo();
         }
       },
     });
