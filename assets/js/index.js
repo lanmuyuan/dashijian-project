@@ -9,7 +9,7 @@ function getInfo() {
   });
 }
 getInfo();
-const renderAvatar = (user) => {
+function renderAvatar(user) {
   // 获取用户名字
   let name = user.nickname || user.username;
   // 设置欢迎文本
@@ -25,7 +25,7 @@ const renderAvatar = (user) => {
     let firstName = name[0].toUpperCase();
     $(".text-avatar").html(firstName);
   }
-};
+}
 $("#exitBtn").on("click", function () {
   layui.layer.confirm(
     "确定退出登录？",
